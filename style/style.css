@@ -17,6 +17,7 @@
 }
 .text-gray{
     color: #8987A1;
+    font-family: sans-serif;
 }
 .text-black{
     color: #252432;
@@ -37,7 +38,7 @@
 
 /* nav style */
 header{
-    margin: 0 auto
+    margin: 0 auto;
 }
 nav{
     justify-content: space-between;
@@ -51,10 +52,46 @@ ul li a{
     text-transform: capitalize;
     margin-right: 40px;
 }
+/* banner style */
+.banner-container{
+    align-items: center;
+}
+.banner-content,
+.banner-image{
+    width: calc(100% - 40px / 2);
+}
+.banner-title{
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: "Noto serif";
+}
+.banner-description{
+    margin-top: 20px;
+    line-height: 1.5em;
+}
 
 /* responsive style */
 @media screen and (max-width: 576px) {
+    nav{
+        margin-bottom: 80px;
+    }
     nav .display-hide{
         display: none;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+    }
+    .banner-content,
+    .banner-image{
+        width: 100%;
+    }
+    .banner-image{
+        margin-bottom: 30px;
+    }
+    .banner-title{
+        font-size: 2rem;
+    }
+    .banner-image img{
+        width: 100%;
     }
 }
