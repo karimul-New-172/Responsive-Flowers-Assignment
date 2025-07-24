@@ -106,7 +106,7 @@ ul li a{
 }
 .item-name,
 .item-price{
-    font-size: 1.4rem;
+    font-size: 1.375rem;
     font-family: "Inter";
 }
 .item-price{
@@ -122,6 +122,37 @@ ul li a{
     font-weight: 600;
     border: none;
     padding: 16px 20px;
+}
+
+/* badge section start */
+.badge-section{
+    margin-top: 150px;
+    gap: 80px;
+    align-items: center;
+}
+.badge-image,
+.badge-content{
+    width: calc(100% / 2 - 80px);
+}
+.badge-image{
+    position: relative;
+}
+.badge-content .section-title,
+.badge-content ul li{
+    margin-bottom: 30px;
+}
+.list-item{
+    padding-left: 20px;
+    line-height: 1.5em;
+}
+.badge{
+    background-color: transparent;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: -20%;
+    left: 75%;
+    z-index: 999;
 }
 
 /* responsive style */
@@ -146,7 +177,8 @@ ul li a{
     .banner-title{
         font-size: 2rem;
     }
-    .banner-image img{
+    .banner-image img,
+    .badge-image img{
         width: 100%;
     }
 
@@ -156,5 +188,18 @@ ul li a{
     }
     .card-container{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* badge section */
+    .badge-section{
+        flex-direction: column;
+    }
+    .badge-image,
+    .badge-content{
+        width: 100%;
+        gap: 20px;
+    }
+    .badge{
+        display: none;
     }
 }
