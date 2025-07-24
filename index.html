@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- font awesome -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- main style -->
+    <link rel="stylesheet" href="style/style.css">
     <title>responsive flower</title>
 </head>
 <body>
     <!-- header start -->
-    <header>
+    <header class="max-width">
         <!-- nav start -->
-         <nav>
+         <nav class="flex">
             <img src="assets/logo.png" alt="">
-            <ul>
-                <li><a href="">home</a></li>
-                <li><a href="">shop</a></li>
-                <li><a href="">about us</a></li>
-                <li><a href=""><i class="fa-solid fa-cart-shopping"></i>Cart($56)</a></li>
+            <ul class="ul-style flex">
+                <li><a href="#" class="text-black font-bold display-hide">home</a></li>
+                <li><a href="#" class="text-gray display-hide">shop</a></li>
+                <li><a href="#" class="text-gray display-hide">about us</a></li>
+                <li><a href="#" class="text-black"><i class="fa-solid fa-cart-shopping"></i> Cart ($56)</a></li>
             </ul>
          </nav>
     </header>
