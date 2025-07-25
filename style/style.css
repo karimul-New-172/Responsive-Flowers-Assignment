@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: #F5F8FF;
+    /* background-color: #F5F8FF; */
 }
 
 .inter-fonts {
@@ -86,7 +86,8 @@ ul li a{
 .plants{
     margin-top: 90px;
 }
-.plants-content{
+.plants-content,
+.deal-content{
     width: 890px;
     margin: 0 auto;
 }
@@ -155,6 +156,63 @@ ul li a{
     z-index: 999;
 }
 
+/* latest deal */
+.latest-deal{
+    margin-top: 100px;
+}
+.deal-container{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.box{
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 100px;
+}
+.text-container{
+   color: #fff;
+   font-family: "Inter";
+   text-align: center;
+   background-color: transparent;
+}
+.text-container a{
+    color: #fff;
+}
+.deal-secondary-title {
+    font-size: 1rem;
+    font-weight: 600;
+}
+#box-2 .deal-secondary-title {
+    font-size: 1.6rem;
+}
+#box-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/deal-bloom.png");
+}
+#box-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: span 2;
+    grid-column: span 2;
+    background-image: url("../assets/deal-zabo.png");
+    background-size: cover;
+}
+#box-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/deal-ana.png");
+    background-size: cover;
+    padding: 80px 100px;
+}
 /* responsive style */
 @media screen and (max-width: 576px) {
     nav{
@@ -183,7 +241,8 @@ ul li a{
     }
 
     /* plant section */
-    .plants-content{
+    .plants-content,
+    .deal-content{
         width: 100%;
     }
     .card-container{
@@ -201,5 +260,21 @@ ul li a{
     }
     .badge{
         display: none;
+    }
+
+    /* deal style */
+    .deal-container{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .deal-description{
+        margin-top: 20px;
+    }
+    .deal-secondary-title {
+    font-size: 1rem;
+    font-weight: 600;
+    } 
+    #box-2 .deal-secondary-title {
+        font-size: 1rem;  
     }
 }
