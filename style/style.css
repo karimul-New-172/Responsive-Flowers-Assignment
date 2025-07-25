@@ -213,8 +213,42 @@ ul li a{
     background-size: cover;
     padding: 80px 100px;
 }
+
+/* Join section start */
+.join{
+    margin-top: 100px;
+    min-height: 300px;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/news-letter-bg.png");
+}
+.join .section-title{
+    color: #fff;
+}
+.join-form input[type="email"]{
+    width: 70%;
+    padding: 14px 10px;
+    color: #dccccc;
+    outline: none;
+    border: none;
+    margin-right: 20px;
+}
+form{
+    margin-top: 20px;
+}
+button{
+    padding: 14px 30px;
+    margin-left: -24px;
+    border: none;
+    background-color: #E95A08;
+    color: #fff;
+}
+
 /* responsive style */
 @media screen and (max-width: 576px) {
+    body{
+        padding: 0 10px;
+    }
     nav{
         margin-bottom: 80px;
     }
@@ -276,5 +310,10 @@ ul li a{
     } 
     #box-2 .deal-secondary-title {
         font-size: 1rem;  
+    }
+
+    /* Join section style */
+    .join{
+        padding-left: 20px;
     }
 }
