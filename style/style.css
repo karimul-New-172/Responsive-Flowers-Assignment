@@ -1,9 +1,10 @@
 *{
     margin: 0;
     padding: 0;
-    /* background-color: #F5F8FF; */
 }
-
+body{
+    background-color: #F5F8FF;
+}
 .inter-fonts {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -236,7 +237,7 @@ ul li a{
 form{
     margin-top: 20px;
 }
-button{
+.btn-join{
     padding: 14px 30px;
     margin-left: -24px;
     border: none;
