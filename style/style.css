@@ -244,6 +244,36 @@ button{
     color: #fff;
 }
 
+/* footer style start */
+footer{
+    padding: 50px 0;
+    gap: 20px;
+}
+footer .logo-area,
+footer .links-area,
+footer .social-area{
+    width: calc(100% / 3 - 60px);
+}
+.links{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.links li{
+    list-style: none;
+}
+.links a{
+    color: #8987A1;
+}
+.social-links{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.social-links li{
+    list-style: none;
+}
+
 /* responsive style */
 @media screen and (max-width: 576px) {
     body{
@@ -315,5 +345,20 @@ button{
     /* Join section style */
     .join{
         padding-left: 20px;
+    }
+
+    /* footer style */
+    footer{
+        flex-direction: column;
+    }
+    footer .logo-area,
+    footer .links-area,
+    footer .social-area{
+        width: 100%;
+        padding-left: 20px;
+     }
+    .links{
+        grid-template-columns: 1fr;
+        gap: 15px;
     }
 }
